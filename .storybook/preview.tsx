@@ -2,14 +2,14 @@ import React from "react";
 import { GlobalStyle, ThemeProvider } from '@/styles';
 
 const viewports = {
-  xSmall: {
+  small: {
     name: 'iPhone SE',
     styles: {
       width: '320px',
       height: '568px',
     },
   },
-  small: {
+  mobile: {
     name: 'Small',
     styles: {
       width: '375px',
@@ -37,7 +37,7 @@ const viewports = {
       height: '675px',
     },
   },
-  xLargeDesktop: {
+  extraLargeDesktop: {
     name: 'xxLarge',
     styles: {
       width: '1400px',

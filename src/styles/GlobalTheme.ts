@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-import { Theme } from '@/styles/theme';
+import { Theme } from '@/styles/theme/theme';
 
 interface StyleProps {
   theme: Theme;

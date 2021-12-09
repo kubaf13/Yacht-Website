@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider as ThemeProvideBase } from 'styled-components';
 
-import theme from './theme';
+import theme from './theme/theme';
 
 interface ThemeProviderProps {
   children?: React.ReactNode;
