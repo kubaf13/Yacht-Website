@@ -1,13 +1,4 @@
-interface Palette {
-  '100': string;
-  '200': string;
-  '300': string;
-  '400': string;
-  '500': string;
-  '600': string;
-  '700': string;
-  '800': string;
-}
+import { Palette, Theme } from './theme.types';
 
 const breakpoints = {
   maxWidth: 1182,
@@ -40,21 +31,6 @@ const secondaryPalette: Palette = {
   '800': '',
 };
 
-export interface Theme {
-  breakpoints;
-  palette: {
-    primaryPalette: Palette;
-    secondaryPalette: Palette;
-  };
-  media: {
-    mobile: string;
-    tablet: string;
-    desktop: string;
-    largeDesktop: string;
-    extraLargeDesktop: string;
-  };
-}
-
 const theme: Theme = {
   breakpoints,
   palette: {
@@ -62,6 +38,7 @@ const theme: Theme = {
     secondaryPalette,
   },
   media: {
+    small: `screen and (min-width: ${breakpoints.mobile}px)`,
     mobile: `screen and (min-width: ${breakpoints.mobile}px)`,
     tablet: `screen and (min-width: ${breakpoints.tablet}px)`,
     desktop: `screen and (min-width: ${breakpoints.desktop}px)`,
