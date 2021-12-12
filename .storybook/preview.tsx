@@ -24,21 +24,21 @@ const viewports = {
     },
   },
   desktop: {
-    name: 'Large',
+    name: 'Desktop',
     styles: {
       width: '992px',
       height: '1024px',
     },
   },
   largeDesktop: {
-    name: 'xLarge',
+    name: 'Large',
     styles: {
       width: '1200px',
       height: '675px',
     },
   },
   extraLargeDesktop: {
-    name: 'xxLarge',
+    name: 'Extra Large',
     styles: {
       width: '1400px',
       height: '1024px',
