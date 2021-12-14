@@ -6,7 +6,7 @@ const breakpoints = {
   largeDesktop: 1140,
   desktop: 992,
   tablet: 768,
-  mobile: 320,
+  mobile: 375,
 };
 
 const primaryPalette: Palette = {
@@ -24,7 +24,6 @@ const theme: Theme = {
     primaryPalette,
   },
   media: {
-    small: `screen and (min-width: ${breakpoints.mobile}px)`,
     mobile: `screen and (min-width: ${breakpoints.mobile}px)`,
     tablet: `screen and (min-width: ${breakpoints.tablet}px)`,
     desktop: `screen and (min-width: ${breakpoints.desktop}px)`,
