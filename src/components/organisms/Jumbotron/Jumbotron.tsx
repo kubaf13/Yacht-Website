@@ -15,6 +15,7 @@ export const Jumbotron = ({
   title,
   paragraph,
   altText,
+  imageUrl,
   linkButton,
 }: JumbotronTypes): ReactElement => (
   <JumbotronWrapper>
@@ -24,13 +25,13 @@ export const Jumbotron = ({
       <LinkButton {...linkButton} />
     </TextWrapper>
     <div>
-      {/*<Image*/}
-      {/*  src={homepageBanner}*/}
-      {/*  alt={altText}*/}
-      {/*  width="500"*/}
-      {/*  height="500"*/}
-      {/*  layout={'fill'}*/}
-      {/*/>*/}
+      <Image
+        src={imageUrl}
+        alt={altText}
+        width="100"
+        height="100"
+        layout="fill"
+      />
     </div>
   </JumbotronWrapper>
 );

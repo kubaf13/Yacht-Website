@@ -14,6 +14,6 @@ export const jumbotronMocks: JumbotronTypes = {
     variant: VARIANTS.SECONDARY,
     ariaLabel: 'Learn more',
   },
-  imageUrl: '@/public/static/homepage-banner.jpg',
+  imageUrl: '/@images/homepage-banner.jpg',
   altText: 'Yacht on the sea',
 };
