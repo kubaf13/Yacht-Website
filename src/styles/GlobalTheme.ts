@@ -23,30 +23,75 @@ const GlobalStyle = createGlobalStyle<StyleProps>`
     color: ${({ theme }) => theme.palette.primaryPalette.paragraph}
   }
   
-  h1,h2,h3,h4,h5 {
+  h1, h2, h3, h4, h5 {
     color: ${({ theme }) => theme.palette.primaryPalette.blue};
     font-weight: 700;
   }
   
   h1 {
-    font-size: 4.6rem;
+    font-size: 3.5rem;
   }
-  
+
   h2 {
-    font-size: 3.6rem;
-  }
-  
-  h3 {
     font-size: 2.8rem;
   }
-  
-  h4 {
-    font-size: 2.2rem;
+
+  h3 {
+    font-size: 2.4rem;
   }
-  
+
+  h4 {
+    font-size: 2.1rem;
+  }
+
   h5 {
     font-size: 1.8rem;
   }
+
+  @media ${({ theme }) => theme.media.tablet}{
+    h1 {
+      font-size: 4.0rem;
+    }
+
+    h2 {
+      font-size: 3.4rem;
+    }
+
+    h3 {
+      font-size: 2.6rem;
+    }
+
+    h4 {
+      font-size: 2.1rem;
+    }
+
+    h5 {
+      font-size: 1.8rem;
+    }
+  }
+
+  @media ${({ theme }) => theme.media.desktop}{
+    h1 {
+      font-size: 4.6rem;
+    }
+    
+    h2 {
+      font-size: 3.6rem;
+    }
+    
+    h3 {
+      font-size: 2.8rem;
+    }
+
+    h4 {
+      font-size: 2.2rem;
+    }
+
+    h5 {
+      font-size: 1.8rem;
+    }
+  }
+  
 `;
 
 export default GlobalStyle;
