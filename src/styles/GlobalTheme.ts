@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-import { Theme } from '@/styles/theme/theme';
+import { Theme } from '@/styles/theme/theme.types';
 
 interface StyleProps {
   theme: Theme;
@@ -13,17 +13,19 @@ const GlobalStyle = createGlobalStyle<StyleProps>`
     padding: 0;
   }
   
-  html {
+  html, body {
     font-size: 10px;
+    font-family: 'Montserrat', -apple-system, Roboto, sans-serif, Arial;
   }
   
   p {
     font-size: 1.6rem;
-    color: ${({ theme }) => theme.palette.secondaryPalette['500']}
+    color: ${({ theme }) => theme.palette.primaryPalette.paragraph}
   }
   
   h1,h2,h3,h4,h5 {
-    color: ${({ theme }) => theme.palette.primaryPalette['500']}
+    color: ${({ theme }) => theme.palette.primaryPalette.blue};
+    font-weight: 700;
   }
   
   h1 {

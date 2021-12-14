@@ -1,9 +1,12 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 
 const WelcomeWrapper = styled.section`
-  width: 90%;
-  margin: 10px auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
 `;
 
 export default { title: 'Welcome' };
