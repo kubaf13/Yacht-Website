@@ -55,7 +55,3 @@ export const BurgerButtonWrapper = styled.div<BurgerButtonTypes>`
     display: none;
   } ;
 `;
-
-export const Wrapper = styled.div`
-  position: relative;
-`;
