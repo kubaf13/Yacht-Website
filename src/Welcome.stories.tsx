@@ -17,6 +17,14 @@ const WelcomeWrapper = styled.section`
     p {
       margin: 20px 0;
     }
+
+    h3 {
+      color: ${({ theme }) => theme.palette.primaryPalette.lightBlue};
+    }
+
+    p {
+      line-height: 30px;
+    }
   }
 `;
 
@@ -28,8 +36,8 @@ export const Welcome: FC = () => (
       <h1>Yacht Renting</h1>
       <h3>Website Storybook</h3>
       <p>
-        This is a Storybook for all component in this website. In left sidebar
-        you have all component with ATOMIC DESIGN system.
+        This is a Storybook for all component in this website. <br />
+        In left sidebar you have all component with ATOMIC DESIGN system.
       </p>
     </div>
   </WelcomeWrapper>
