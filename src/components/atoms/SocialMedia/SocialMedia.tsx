@@ -5,11 +5,13 @@ import {
   FacebookIcon,
   InstagramIcon,
   SocialWrapper,
+  Text,
   YoutubeIcon,
 } from './SocialMedia.styled';
 
 export const SocialMedia = ({ icons }: SocialMediaTypes): ReactElement => (
   <SocialWrapper>
+    <Text>Follow us</Text>
     <a href={icons[0].url} aria-label={icons[0].ariaLabel}>
       <FacebookIcon />
     </a>
