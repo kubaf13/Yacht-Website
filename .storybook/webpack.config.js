@@ -20,6 +20,7 @@ module.exports = ({ config }) => {
     '@helpers': path.resolve(__dirname, '../src/helpers/'),
     '@hooks': path.resolve(__dirname, '../src/hooks/'),
     '@adapters': path.resolve(__dirname, '../src/adapters/'),
+    '@images': path.resolve(__dirname, '../public/static/images/'),
   };
 
   config.module.rules.push({
