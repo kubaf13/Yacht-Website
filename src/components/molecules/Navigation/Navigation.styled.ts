@@ -1,0 +1,60 @@
+import styled, { css } from 'styled-components';
+
+interface NavigationStyledTypes {
+  isOpened?: boolean;
+}
+
+export const StyledNav = styled.nav<NavigationStyledTypes>`
+  background: ${({ theme }) => theme.palette.primaryPalette.white};
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  transform: translate(150vw);
+  z-index: 10;
+
+  @media ${({ theme }) => theme.media.tablet} {
+    position: static;
+    min-height: auto;
+    transform: none;
+    order: 1;
+    transition: none;
+  }
+
+  ${({ isOpened }) =>
+    isOpened &&
+    css`
+      min-height: calc(100vh);
+      transform: translate(0);
+      transition: transform 0.5s ease-in-out;
+    `};
+\` ;
+`;
+
+export const NavigationWrapper = styled.ul`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  list-style-type: none;
+  position: relative;
+  width: 100vw;
+
+  @media ${({ theme }) => theme.media.tablet} {
+    height: 60px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+`;
+
+export const StyledLi = styled.li`
+  margin: 20px 0;
+
+  @media ${({ theme }) => theme.media.mobile} {
+    margin: 40px 0;
+  }
+
+  @media ${({ theme }) => theme.media.tablet} {
+    margin: 5px 20px;
+  } ;
+`;

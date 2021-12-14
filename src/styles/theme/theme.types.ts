@@ -13,7 +13,6 @@ export interface Theme {
     primaryPalette: Palette;
   };
   media: {
-    small: string;
     mobile: string;
     tablet: string;
     desktop: string;
