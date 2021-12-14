@@ -41,13 +41,13 @@ export const BurgerButtonWrapper = styled.div<BurgerButtonTypes>`
       &::before {
         background: ${({ theme }) => theme.palette.primaryPalette.blue};
         height: 6px;
-        transform: translateY(7px) rotateZ(45deg);
+        transform: rotateZ(45deg);
       }
 
       &::after {
         background: ${({ theme }) => theme.palette.primaryPalette.blue};
         height: 6px;
-        transform: translateY(7px) rotate(-45deg);
+        transform: rotate(-45deg);
       }
     `}
 

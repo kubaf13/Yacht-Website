@@ -6,10 +6,5 @@ export const BurgerButton = ({
   setOpen,
   isOpened,
 }: BurgerButtonTypes): ReactElement => (
-  <div>
-    <BurgerButtonWrapper
-      isOpened={isOpened}
-      onClick={() => setOpen(isOpened)}
-    />
-  </div>
+  <BurgerButtonWrapper isOpened={isOpened} onClick={() => setOpen(isOpened)} />
 );
