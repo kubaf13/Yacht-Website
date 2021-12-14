@@ -9,7 +9,7 @@ export const StyledNav = styled.nav<NavigationStyledTypes>`
   height: 100vh;
   position: absolute;
   top: 0;
-  transform: translate(150vw);
+  transform: translate(100vw);
   z-index: 10;
 
   @media ${({ theme }) => theme.media.tablet} {
@@ -25,7 +25,7 @@ export const StyledNav = styled.nav<NavigationStyledTypes>`
     css`
       min-height: calc(100vh);
       transform: translate(0);
-      transition: transform 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
     `};
 \` ;
 `;

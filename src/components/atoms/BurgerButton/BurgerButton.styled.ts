@@ -12,6 +12,7 @@ export const BurgerButtonWrapper = styled.div<BurgerButtonTypes>`
   top: 40px;
   transition: height 0.1s ease-out;
   width: 34px;
+  z-index: 100;
 
   &::before,
   &::after {
