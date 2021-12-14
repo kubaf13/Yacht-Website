@@ -36,24 +36,27 @@ const fadeIn = keyframes`
 const getVariant = (variant: VARIANTS, isAnimated: boolean) => {
   if (variant === VARIANTS.SECONDARY) {
     return css`
-      color: ${({ theme }) => theme.primaryPalette[300]};
-      border: 1px solid #115d8c;
+      background: ${({ theme }) => theme.palette.primaryPalette.blue};
+      border: 1px solid transparent;
+      color: ${({ theme }) => theme.palette.primaryPalette.white};
 
       &:hover,
       &:active {
-        background-color: #f2f2f2;
-        color: #f2f2f2;
+        background: ${({ theme }) => theme.palette.primaryPalette.white};
+        border: 1px solid ${({ theme }) => theme.palette.primaryPalette.blue};
+        color: ${({ theme }) => theme.palette.primaryPalette.blue};
       }
 
       &::before {
-        background-color: #f2f2f2;
+        background-color: ${({ theme }) => theme.palette.primaryPalette.blue};
       }
     `;
   }
 
   return css`
-    color: ${({ theme }) => theme.palette.primaryPalette[300]};
-    border: 1px solid #f2f2f2;
+    background: ${({ theme }) => theme.palette.primaryPalette.white};
+    border: 2px solid ${({ theme }) => theme.palette.primaryPalette.blue};
+    color: ${({ theme }) => theme.palette.primaryPalette.blue};
     ${isAnimated &&
     css`
       animation: ${fadeIn} 0.3s ease-in 0.5s forwards;
@@ -64,8 +67,9 @@ const getVariant = (variant: VARIANTS, isAnimated: boolean) => {
     `}
     &:hover,
     &:active {
-      background-color: #115d8c;
-      color: white;
+      background: ${({ theme }) => theme.palette.primaryPalette.blue};
+      border: 2px solid ${({ theme }) => theme.palette.primaryPalette.blue};
+      color: ${({ theme }) => theme.palette.primaryPalette.white};
     }
 
     &::before {
@@ -75,24 +79,24 @@ const getVariant = (variant: VARIANTS, isAnimated: boolean) => {
 };
 
 export const StyledLinkButton = styled.a<StyledLinkButtonTypes>`
-  position: relative;
   display: block;
-  overflow: hidden;
-  width: fit-content;
+  font-size: 1.5rem;
   height: 40px;
-  opacity: 1;
-  padding: 11.5px 10px;
-  font-size: 15px;
   line-height: 15px;
-  text-transform: uppercase;
+  opacity: 1;
+  overflow: hidden;
+  padding: 11.5px 10px;
+  position: relative;
   text-align: center;
-  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
   transition: 0.5s;
+  width: fit-content;
   ${({ isAnimated }) =>
     isAnimated &&
     css`
-      opacity: 0;
       animation: ${fadeIn} 0.3s ease-in 0.5s forwards;
+      opacity: 0;
 
       span {
         animation: ${fadeIn} 0.2s linear 0.8s forwards;
@@ -100,18 +104,17 @@ export const StyledLinkButton = styled.a<StyledLinkButtonTypes>`
       }
 
       &::before {
+        animation: ${animateButton} 0.8s ease-in-out 0.5s forwards;
         content: '';
-        position: absolute;
-        width: 100%;
         height: 100%;
         left: 0;
+        position: absolute;
         top: 0;
         transform: translateX(-100%);
-        animation: ${animateButton} 0.8s ease-in-out 0.5s forwards;
+        width: 100%;
       }
 
       &:hover {
-        background-color: #115d8c;
         cursor: pointer;
       }
     `}
