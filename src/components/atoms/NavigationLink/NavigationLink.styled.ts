@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const StyledNavLink = styled.a`
-  //padding: 10px 20px;
   color: ${({ theme }) => theme.palette.primaryPalette.blue};
   font-size: 2rem;
   position: relative;
