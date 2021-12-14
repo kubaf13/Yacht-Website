@@ -1,0 +1,23 @@
+import { SocialMediaTypes } from '@atoms/SocialMedia/SocialMedia.types';
+import React, { ReactElement } from 'react';
+
+import {
+  FacebookIcon,
+  InstagramIcon,
+  SocialWrapper,
+  YoutubeIcon,
+} from './SocialMedia.styled';
+
+export const SocialMedia = ({ icons }: SocialMediaTypes): ReactElement => (
+  <SocialWrapper>
+    <a href={icons[0].url} aria-label={icons[0].ariaLabel}>
+      <FacebookIcon />
+    </a>
+    <a href={icons[1].url} aria-label={icons[1].ariaLabel}>
+      <InstagramIcon />
+    </a>
+    <a href={icons[2].url} aria-label={icons[2].ariaLabel}>
+      <YoutubeIcon />
+    </a>
+  </SocialWrapper>
+);
