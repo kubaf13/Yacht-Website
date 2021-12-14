@@ -28,8 +28,13 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:prettier/recommended', // Make this the last element so prettier config overrides other formatting rules
   ],
-  plugins: ['simple-import-sort', '@typescript-eslint'],
+  plugins: [
+    'simple-import-sort',
+    '@typescript-eslint',
+    'better-styled-components',
+  ],
   rules: {
+    'better-styled-components/sort-declarations-alphabetically': 2,
     'prettier/prettier': [
       'error',
       {
