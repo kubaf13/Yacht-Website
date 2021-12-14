@@ -13,7 +13,7 @@ const WelcomeWrapper = styled.section`
     width: 90%;
 
     h1,
-    h2,
+    h3,
     p {
       margin: 20px 0;
     }
