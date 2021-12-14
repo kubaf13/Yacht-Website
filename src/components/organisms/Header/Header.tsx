@@ -7,12 +7,12 @@ export const Header = ({ navigation }: HeaderTypes): ReactElement => {
   const [isOpened, setIsOpened] = useState<boolean>(false);
 
   return (
-    <div>
+    <header>
       <BurgerButton
         isOpened={isOpened}
         setOpen={() => setIsOpened(prevState => !prevState)}
       />
       <Navigation {...navigation} isOpened={isOpened} />
-    </div>
+    </header>
   );
 };
