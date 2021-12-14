@@ -1,5 +1,6 @@
 export interface Palette {
   blue: string;
+  lightBlue: string;
   paragraph: string;
   gray: string;
   lightGray: string;
