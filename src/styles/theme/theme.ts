@@ -11,6 +11,7 @@ const breakpoints = {
 
 const primaryPalette: Palette = {
   blue: '#003159',
+  lightBlue: '#95B5D0',
   paragraph: '#020202',
   gray: '#5C5E60',
   lightGray: '#5C5E60',
