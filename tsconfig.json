@@ -46,6 +46,9 @@
       ],
       "@adapters/*": [
         "./src/adapters/*"
+      ],
+      "@images/*": [
+        "./public/static/images/*"
       ]
     },
     "incremental": true
