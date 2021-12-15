@@ -1,4 +1,4 @@
-import { NavigationLinkTypes } from '@atoms/NavigationLink/NavigationLink.types';
+import type { NavigationLinkTypes } from '@atoms/NavigationLink/NavigationLink.types';
 
 export interface NavigationTypes {
   links: NavigationLinkTypes[];

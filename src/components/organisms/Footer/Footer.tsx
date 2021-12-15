@@ -2,7 +2,7 @@ import { SocialMedia } from '@atoms/SocialMedia/SocialMedia';
 import React, { ReactElement } from 'react';
 
 import { FooterWrapper } from './Footer.styled';
-import { FooterTypes } from './Footer.types';
+import type { FooterTypes } from './Footer.types';
 
 export const Footer = ({ socialMedia }: FooterTypes): ReactElement => (
   <FooterWrapper>

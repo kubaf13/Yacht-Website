@@ -1,5 +1,7 @@
 import { socialMediaMocks } from '@atoms/SocialMedia/SocialMedia.mocks';
 
-export const footerMocks = {
+import type { FooterTypes } from './Footer.types';
+
+export const footerMocks: FooterTypes = {
   socialMedia: socialMediaMocks,
 };

@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint ./pages ./src --ext .ts --ext .tsx --ext .js",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -s public"
+    "storybook": "start-storybook -s ./public -p 6006"
   },
   "dependencies": {
     "html-react-parser": "^1.4.2",

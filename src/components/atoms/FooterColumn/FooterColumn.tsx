@@ -6,7 +6,7 @@ import {
   ColumnTitle,
   ColumnWrapper,
 } from './FooterColumn.styled';
-import { FooterColumnTypes } from './FooterColumn.types';
+import type { FooterColumnTypes } from './FooterColumn.types';
 
 export const FooterColumn = ({ column }: FooterColumnTypes): ReactElement => (
   <ColumnWrapper>

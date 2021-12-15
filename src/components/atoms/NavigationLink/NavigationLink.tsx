@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 
 import { StyledNavLink } from './NavigationLink.styled';
-import { NavigationLinkTypes } from './NavigationLink.types';
+import type { NavigationLinkTypes } from './NavigationLink.types';
 
 export const NavigationLink = ({
   isOpenedInNewTab,

@@ -1,4 +1,3 @@
-import { SocialMediaTypes } from '@atoms/SocialMedia/SocialMedia.types';
 import React, { ReactElement } from 'react';
 
 import {
@@ -8,6 +7,7 @@ import {
   Text,
   YoutubeIcon,
 } from './SocialMedia.styled';
+import type { SocialMediaTypes } from './SocialMedia.types';
 
 export const SocialMedia = ({ icons }: SocialMediaTypes): ReactElement => (
   <SocialWrapper>

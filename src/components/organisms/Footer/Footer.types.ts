@@ -1,4 +1,4 @@
-import { SocialMediaTypes } from '@atoms/SocialMedia/SocialMedia.types';
+import type { SocialMediaTypes } from '@atoms/SocialMedia/SocialMedia.types';
 
 export interface FooterTypes {
   socialMedia: SocialMediaTypes;

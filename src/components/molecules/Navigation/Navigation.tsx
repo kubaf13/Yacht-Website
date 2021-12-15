@@ -2,7 +2,7 @@ import NavigationLink from '@atoms/NavigationLink';
 import React, { ReactElement } from 'react';
 
 import { NavigationWrapper, StyledLi, StyledNav } from './Navigation.styled';
-import { NavigationTypes } from './Navigation.types';
+import type { NavigationTypes } from './Navigation.types';
 
 export const Navigation = ({
   links,
