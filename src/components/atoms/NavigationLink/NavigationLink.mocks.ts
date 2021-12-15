@@ -1,4 +1,4 @@
-import type { NavigationLinkTypes } from '@atoms/NavigationLink/NavigationLink.types';
+import type { NavigationLinkTypes } from './NavigationLink.types';
 
 export const navigationLinkMocks: NavigationLinkTypes = {
   url: '#our-story',

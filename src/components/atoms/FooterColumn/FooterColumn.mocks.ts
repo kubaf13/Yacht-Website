@@ -1,4 +1,4 @@
-import { FooterColumnTypes } from '@atoms/FooterColumn/FooterColumn.types';
+import type { FooterColumnTypes } from '@atoms/FooterColumn/FooterColumn.types';
 
 export const footerColumnMocks: FooterColumnTypes = {
   column: {
@@ -7,10 +7,10 @@ export const footerColumnMocks: FooterColumnTypes = {
       link: '#our-yachts',
     },
     elements: [
-      { label: 'yacht "Annabelle', link: '/yacht-annabelle' },
-      { label: 'yacht "Paradise', link: '/yacht-paradise' },
-      { label: 'yacht "Journey', link: '/yacht-journey' },
-      { label: 'yacht "Amanda', link: '/yacht-amanda' },
+      { label: 'yacht "Annabelle"', link: '/yacht-annabelle' },
+      { label: 'yacht "Paradise"', link: '/yacht-paradise' },
+      { label: 'yacht "Journey"', link: '/yacht-journey' },
+      { label: 'yacht "Amanda"', link: '/yacht-amanda' },
     ],
   },
   contact: {

@@ -2,7 +2,7 @@ import React, { FC, useState } from 'react';
 import styled from 'styled-components';
 
 import { BurgerButton as Burger } from './BurgerButton';
-import { BurgerButtonTypes } from './BurgerButton.types';
+import type { BurgerButtonTypes } from './BurgerButton.types';
 
 const StyledComponentWrapper = styled.div`
   // background: ${({ theme }) => theme.palette.primaryPalette.blue};

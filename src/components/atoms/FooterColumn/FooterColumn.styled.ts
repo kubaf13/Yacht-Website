@@ -9,14 +9,14 @@ export const ColumnWrapper = styled.div`
 export const ColumnTitle = styled.a`
   color: ${({ theme }) => theme.palette.primaryPalette.white};
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 800;
   text-decoration: none;
 `;
 
 export const ColumnList = styled.ul`
   display: none;
 
-  @media ${({ theme }) => theme.media.desktop} {
+  @media ${({ theme }) => theme.media.tablet} {
     display: block;
     list-style-type: none;
   }
@@ -28,6 +28,7 @@ export const ColumnLi = styled.li`
   a {
     color: ${({ theme }) => theme.palette.primaryPalette.white};
     font-size: 1.7rem;
+    font-weight: 300;
     text-decoration: none;
   }
 `;

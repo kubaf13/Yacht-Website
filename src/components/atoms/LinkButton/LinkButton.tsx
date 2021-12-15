@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 
 import { StyledLinkButton } from './LinkButton.styled';
-import { LinkButtonTypes } from './LinkButton.types';
+import type { LinkButtonTypes } from './LinkButton.types';
 
 export const LinkButton = ({
   openInNewTab,

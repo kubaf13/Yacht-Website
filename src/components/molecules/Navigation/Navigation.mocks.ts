@@ -1,4 +1,4 @@
-import { NavigationTypes } from './Navigation.types';
+import type { NavigationTypes } from './Navigation.types';
 
 export const navigationMocks: NavigationTypes = {
   links: [

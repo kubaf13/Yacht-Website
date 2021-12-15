@@ -1,6 +1,7 @@
-import { BurgerButtonWrapper } from '@atoms/BurgerButton/BurgerButton.styled';
-import { BurgerButtonTypes } from '@atoms/BurgerButton/BurgerButton.types';
 import React, { ReactElement } from 'react';
+
+import { BurgerButtonWrapper } from './BurgerButton.styled';
+import type { BurgerButtonTypes } from './BurgerButton.types';
 
 export const BurgerButton = ({
   setOpen,

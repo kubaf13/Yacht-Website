@@ -1,4 +1,4 @@
-import { SocialMediaTypes } from '@atoms/SocialMedia/SocialMedia.types';
+import type { SocialMediaTypes } from './SocialMedia.types';
 
 export const socialMediaMocks: SocialMediaTypes = {
   icons: [
