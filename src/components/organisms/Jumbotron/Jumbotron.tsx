@@ -1,5 +1,4 @@
 import { LinkButton } from '@atoms/LinkButton/LinkButton';
-import homepageBanner from '@images/homepage-banner.jpg';
 import Image from 'next/image';
 import React, { ReactElement } from 'react';
 
@@ -28,8 +27,8 @@ export const Jumbotron = ({
       <Image
         src={imageUrl}
         alt={altText}
-        width="100"
-        height="100"
+        // width="100"
+        height="600"
         layout="fill"
       />
     </div>

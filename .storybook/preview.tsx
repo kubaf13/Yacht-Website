@@ -1,5 +1,6 @@
 import React from "react";
 import { GlobalStyle, ThemeProvider } from '@/styles';
+import * as nextImage from 'next/image';
 
 const viewports = {
   small: {
@@ -71,3 +72,8 @@ export const parameters = {
   },
   layout: 'fullscreen',
 };
+
+Object.defineProperty(nextImage, 'default', {
+  configurable: true,
+  value: props => <img {...props} />
+});

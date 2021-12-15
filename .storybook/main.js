@@ -6,5 +6,4 @@ module.exports = {
     '@storybook/addon-a11y',
     '@storybook/addon-essentials',
   ],
-  staticDirs: ['../public']
 };
