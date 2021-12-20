@@ -7,15 +7,39 @@ export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 50vh;
   padding: 20px;
   position: absolute;
   width: 100vw;
+  z-index: 10;
+
+  @media ${({ theme }) => theme.media.tablet} {
+    height: 30vh;
+  }
+
+  @media ${({ theme }) => theme.media.desktop} {
+    position: static;
+    width: 500px;
+    height: 400px;
+    background: ${({ theme }) => theme.palette.primaryPalette.white};
+    margin: 100px 0 auto;
+  }
+
+  @media ${({ theme }) => theme.media.largeDesktop} {
+    margin: 100px 0 auto 10px;
+    width: 700px;
+    padding: 50px 50px;
+  }
 `;
 
 export const Heading = styled.h1`
   font-weight: bold;
   margin: 10px 0;
+
+  @media ${({ theme }) => theme.media.desktop} {
+    font-size: 5rem;
+    margin: 20px auto;
+    font-weight: 800;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -24,6 +48,44 @@ export const Paragraph = styled.p`
   margin: 10px 0 20px;
 `;
 
-export const JumbotronWrapper = styled.section`
+export const ImageWrapper = styled.div`
+  overflow-x: hidden;
+  text-align: center;
   width: 100vw;
+
+  @media ${({ theme }) => theme.media.desktop} {
+    position: absolute;
+    transform: rotate(17deg);
+    z-index: 0;
+    top: -50px;
+    right: -150px;
+  }
+
+  img {
+    height: 100vh;
+    object-fit: cover;
+    width: 100vw;
+
+    @media ${({ theme }) => theme.media.desktop} {
+      height: 500px;
+    }
+
+    @media ${({ theme }) => theme.media.largeDesktop} {
+      height: 600px;
+    }
+  }
+`;
+
+export const JumbotronWrapper = styled.section`
+  height: 100vh;
+  width: 100vw;
+
+  @media ${({ theme }) => theme.media.desktop} {
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    max-height: 750px;
+  } ;
 `;
