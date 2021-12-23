@@ -5,6 +5,7 @@ export interface Palette {
   gray: string;
   lightGray: string;
   white: string;
+  lightWhite: string;
 }
 
 export interface Theme {

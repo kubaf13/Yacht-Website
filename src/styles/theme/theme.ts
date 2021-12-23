@@ -16,6 +16,7 @@ const primaryPalette: Palette = {
   gray: '#5C5E60',
   lightGray: '#5C5E60',
   white: '#FFFFFF',
+  lightWhite: 'rgba(255,255,255,0.61)',
 };
 
 const theme: Theme = {
