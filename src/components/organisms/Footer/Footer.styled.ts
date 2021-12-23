@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const FooterWrapper = styled.footer`
   background: ${({ theme }) => theme.palette.primaryPalette.blue};
-  bottom: 0;
   color: white;
   display: grid;
   grid-gap: 5px;
@@ -12,7 +11,6 @@ export const FooterWrapper = styled.footer`
     'horizontalLine'
     'author';
   grid-template-rows: repeat(4, auto);
-  position: absolute;
   width: 100vw;
 
   @media ${({ theme }) => theme.media.desktop} {
