@@ -14,7 +14,7 @@ export const StyledNav = styled.nav<NavigationStyledTypes>`
 
   @media ${({ theme }) => theme.media.tablet} {
     position: static;
-    min-height: auto;
+    height: auto;
     transform: none;
     order: 1;
     transition: none;
