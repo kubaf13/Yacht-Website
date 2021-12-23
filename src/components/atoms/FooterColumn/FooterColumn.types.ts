@@ -9,11 +9,4 @@ export interface FooterColumnTypes {
       link?: string;
     }[];
   };
-  contact?: {
-    label: string;
-    link?: string;
-    phone: string;
-    mail: string;
-    address: string;
-  };
 }

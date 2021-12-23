@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 
 import { FooterColumn as FooterColumnComponent } from './FooterColumn';
-import { footerColumnMocks } from './FooterColumn.mocks';
+import { aboutUsMocks } from './FooterColumn.mocks';
 
 const Wrapper = styled.div`
   background: ${({ theme }) => theme.palette.primaryPalette.blue};
@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 
 export const FooterColumn: FC = () => (
   <Wrapper>
-    <FooterColumnComponent {...footerColumnMocks} />
+    <FooterColumnComponent {...aboutUsMocks} />
   </Wrapper>
 );
 

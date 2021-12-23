@@ -11,12 +11,14 @@ import type { FooterColumnTypes } from './FooterColumn.types';
 export const FooterColumn = ({ column }: FooterColumnTypes): ReactElement => (
   <ColumnWrapper>
     <ColumnTitle href={column.title.link}>{column.title.label}</ColumnTitle>
-    <ColumnList>
-      {column.elements.map(element => (
-        <ColumnLi key={element.label}>
-          <a href={element.link}>{element.label}</a>
-        </ColumnLi>
-      ))}
-    </ColumnList>
+    {column.elements && (
+      <ColumnList>
+        {column.elements.map(element => (
+          <ColumnLi key={element.label}>
+            <a href={element.link}>{element.label}</a>
+          </ColumnLi>
+        ))}
+      </ColumnList>
+    )}
   </ColumnWrapper>
 );
