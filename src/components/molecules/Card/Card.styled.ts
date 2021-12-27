@@ -53,7 +53,6 @@ export const InfoBlock = styled.div`
 
 export const Title = styled.h3`
   font-weight: 700;
-  margin-top: 10px;
 `;
 
 export const SubTitle = styled.h5`

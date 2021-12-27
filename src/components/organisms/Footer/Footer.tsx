@@ -5,19 +5,13 @@ import {
   ourYachtsMocks,
 } from '@atoms/FooterColumn/FooterColumn.mocks';
 import { SocialMedia } from '@atoms/SocialMedia/SocialMedia';
-import React, { ReactElement, useEffect, useState } from 'react';
+import React, { ReactElement } from 'react';
 
 import { Author, FooterWrapper, Line, SecondNavigation } from './Footer.styled';
 import type { FooterTypes } from './Footer.types';
 
 export const Footer = ({ socialMedia }: FooterTypes): ReactElement => {
-  const [date, setDate] = useState<boolean>();
-
-  const getYear = () => setDate(new Date().getFullYear());
-
-  useEffect(() => {
-    getYear();
-  }, []);
+  const getYear = () => new Date().getFullYear();
 
   return (
     <FooterWrapper>
@@ -35,7 +29,7 @@ export const Footer = ({ socialMedia }: FooterTypes): ReactElement => {
             Flisek<sup>2</sup>
           </strong>
         </p>
-        <p>&copy; {date} </p>
+        <p>&copy; {getYear()} </p>
       </Author>
     </FooterWrapper>
   );
