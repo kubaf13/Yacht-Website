@@ -11,6 +11,7 @@ export const CardWrapper = styled.div<CardWrapperTypes>`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 20px auto;
 
   @media ${({ theme }) => theme.media.desktop} {
     flex-direction: ${({ imagePosition }) =>
@@ -19,6 +20,7 @@ export const CardWrapper = styled.div<CardWrapperTypes>`
 `;
 
 export const ImageWrapper = styled.div`
+  background-color: white;
   width: 100%;
 
   @media ${({ theme }) => theme.media.desktop} {

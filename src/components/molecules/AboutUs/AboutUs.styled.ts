@@ -33,3 +33,15 @@ export const Wrapper = styled.section`
   overflow: hidden;
   position: relative;
 `;
+
+export const ImageWrapper = styled.div`
+  @media ${({ theme }) => theme.media.tablet} {
+    width: 100vw;
+
+    img {
+      height: auto;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+`;
