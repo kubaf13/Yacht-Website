@@ -89,7 +89,7 @@ export const StyledLinkButton = styled.a<StyledLinkButtonTypes>`
   position: relative;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: lowercase;
   transition: 0.5s;
   width: fit-content;
   ${({ isAnimated }) =>
