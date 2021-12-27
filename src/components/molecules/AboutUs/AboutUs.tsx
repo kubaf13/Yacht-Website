@@ -1,7 +1,13 @@
 import type { ReactElement } from 'react';
 import React from 'react';
 
-import { Heading, Paragraph, TextWrapper, Wrapper } from './AboutUs.styled';
+import {
+  Heading,
+  ImageWrapper,
+  Paragraph,
+  TextWrapper,
+  Wrapper,
+} from './AboutUs.styled';
 import { AboutUsTypes } from './AboutUs.types';
 
 export const AboutUs = ({
@@ -11,7 +17,9 @@ export const AboutUs = ({
   imageUrl,
 }: AboutUsTypes): ReactElement => (
   <Wrapper>
-    <img src={imageUrl} alt={altText} />
+    <ImageWrapper>
+      <img src={imageUrl} alt={altText} />
+    </ImageWrapper>
     <TextWrapper>
       <Heading>{title}</Heading>
       <Paragraph>{description}</Paragraph>
