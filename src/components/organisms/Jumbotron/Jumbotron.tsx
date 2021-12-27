@@ -1,7 +1,6 @@
 import { LinkButton } from '@atoms/LinkButton/LinkButton';
 import React, { ReactElement } from 'react';
 
-// import Image from 'next/image';
 import {
   Heading,
   ImageWrapper,
@@ -21,7 +20,6 @@ export const Jumbotron = ({
   <JumbotronWrapper>
     <ImageWrapper>
       <img src={imageUrl} alt={altText} />
-      {/*<Image src={imageUrl} alt={altText} layout="fixed" />*/}
     </ImageWrapper>
     <TextWrapper>
       <Heading>{title}</Heading>
