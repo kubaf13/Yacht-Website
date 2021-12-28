@@ -110,34 +110,7 @@ export const GalleryWall = styled.div`
 `;
 
 export const Title = styled.h2`
-  color: ${({ theme }) => theme.palette.primaryPalette.white};
+  color: ${({ theme }) => theme.palette.primaryPalette.blue};
   margin: 40px auto;
-  position: relative;
   text-align: center;
-
-  @media ${({ theme }) => theme.media.largeDesktop} {
-    color: ${({ theme }) => theme.palette.primaryPalette.blue};
-  }
-`;
-
-export const Decor = styled.div`
-  background-color: ${({ theme }) => theme.palette.primaryPalette.blue};
-  height: 90px;
-  left: -250px;
-  position: absolute;
-  top: 40px;
-  transform: rotate(-10deg);
-  width: 200vw;
-
-  @media ${({ theme }) => theme.media.tablet} {
-    top: -10px;
-  }
-
-  @media ${({ theme }) => theme.media.desktop} {
-    top: -20px;
-  }
-
-  @media ${({ theme }) => theme.media.largeDesktop} {
-    display: none;
-  }
 `;

@@ -52,7 +52,7 @@ export const BurgerButtonWrapper = styled.div<BurgerButtonTypes>`
       }
     `}
 
-  @media ${({ theme }) => theme.media.desktop} {
+  @media ${({ theme }) => theme.media.tablet} {
     display: none;
   } ;
 `;

@@ -8,7 +8,6 @@ export const StyledMainContent = styled.div`
 
 export const LayoutWrapper = styled.div`
   overflow-x: hidden;
-  padding-top: 64px;
 
   @media ${({ theme }) => theme.media.largeDesktop} {
     min-height: 100vh;

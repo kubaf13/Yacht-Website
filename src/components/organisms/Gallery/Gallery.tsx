@@ -1,15 +1,12 @@
 import type { ReactElement } from 'react';
 import React from 'react';
 
-import { Decor, GalleryWall, Title } from './Gallery.styled';
+import { GalleryWall, Title } from './Gallery.styled';
 import type { GalleryTypes } from './Gallery.types';
 
 export const Gallery = ({ title, images }: GalleryTypes): ReactElement => (
-  <section>
-    <div>
-      <Decor />
-      <Title>{title}</Title>
-    </div>
+  <section id="gallery">
+    <Title>{title}</Title>
     <GalleryWall>
       {images?.map(image => (
         <div key={image.imageUrl} className={image.className}>

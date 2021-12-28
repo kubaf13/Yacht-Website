@@ -16,7 +16,7 @@ export const AboutUs = ({
   altText,
   imageUrl,
 }: AboutUsTypes): ReactElement => (
-  <Wrapper>
+  <Wrapper id="about-us">
     <ImageWrapper>
       <img src={imageUrl} alt={altText} />
     </ImageWrapper>

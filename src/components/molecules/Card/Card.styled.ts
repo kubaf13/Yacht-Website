@@ -16,6 +16,7 @@ export const CardWrapper = styled.div<CardWrapperTypes>`
   @media ${({ theme }) => theme.media.desktop} {
     flex-direction: ${({ imagePosition }) =>
       imagePosition === ImagePosition.LEFT ? 'row' : 'row-reverse'};
+    margin: 0 auto;
   }
 `;
 

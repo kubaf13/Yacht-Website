@@ -11,6 +11,7 @@ export const StyledNav = styled.nav<NavigationStyledTypes>`
   top: 0;
   transform: translate(100vw);
   z-index: 10;
+  overflow: hidden;
 
   @media ${({ theme }) => theme.media.tablet} {
     position: static;
@@ -44,6 +45,7 @@ export const NavigationWrapper = styled.ul`
     height: 60px;
     flex-direction: row;
     justify-content: flex-end;
+    margin: 0 auto;
   }
 `;
 

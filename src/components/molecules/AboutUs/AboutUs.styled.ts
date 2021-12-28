@@ -7,7 +7,7 @@ export const TextWrapper = styled.article`
   width: 90%;
 
   @media ${({ theme }) => theme.media.tablet} {
-    max-width: ${({ theme }) => theme.breakpoints.maxWidth}px;
+    max-width: 50%;
     background: rgba(255, 255, 255, 0.9);
     padding: 40px 20px;
   }
@@ -30,16 +30,17 @@ export const Wrapper = styled.section`
   align-items: center;
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
   overflow: hidden;
   position: relative;
 `;
 
 export const ImageWrapper = styled.div`
   @media ${({ theme }) => theme.media.tablet} {
-    width: 100vw;
+    width: 1920px;
 
     img {
-      height: auto;
+      height: 500px;
       object-fit: cover;
       width: 100%;
     }

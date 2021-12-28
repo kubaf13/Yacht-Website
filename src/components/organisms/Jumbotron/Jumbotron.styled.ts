@@ -8,12 +8,11 @@ export const TextWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  position: absolute;
   width: 100vw;
   z-index: 10;
 
   @media ${({ theme }) => theme.media.tablet} {
-    height: 30vh;
+    height: 20vh;
   }
 
   @media ${({ theme }) => theme.media.desktop} {
@@ -46,6 +45,10 @@ export const Paragraph = styled.p`
   font-size: 1.4rem;
   line-height: 2.4rem;
   margin: 10px 0 20px;
+
+  @media ${({ theme }) => theme.media.tablet} {
+    padding: 30px 50px;
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -55,14 +58,18 @@ export const ImageWrapper = styled.div`
 
   @media ${({ theme }) => theme.media.desktop} {
     position: absolute;
-    transform: rotate(17deg);
     z-index: 0;
     top: -50px;
     right: -150px;
   }
 
+  @media ${({ theme }) => theme.media.largeDesktop} {
+    top: 0;
+    right: -300px;
+  }
+
   img {
-    height: 100vh;
+    height: auto;
     object-fit: cover;
     width: 100vw;
 
@@ -78,14 +85,19 @@ export const ImageWrapper = styled.div`
 
 export const JumbotronWrapper = styled.section`
   height: 100vh;
+  position: relative;
   width: 100vw;
 
+  @media ${({ theme }) => theme.media.tablet} {
+    height: 800px;
+  }
+
   @media ${({ theme }) => theme.media.desktop} {
-    position: relative;
     overflow: hidden;
-    margin-top: 50px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     max-height: 750px;
+    max-width: ${({ theme }) => theme.breakpoints.maxWidth}px;
   } ;
 `;

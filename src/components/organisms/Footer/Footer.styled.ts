@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
-export const FooterWrapper = styled.footer`
+export const Wrapper = styled.footer`
   background: ${({ theme }) => theme.palette.primaryPalette.blue};
+  width: 100vw;
+`;
+
+export const FooterWrapper = styled.div`
   color: white;
   display: grid;
   grid-gap: 5px;
@@ -11,9 +15,10 @@ export const FooterWrapper = styled.footer`
     'horizontalLine'
     'author';
   grid-template-rows: repeat(4, auto);
-  width: 100vw;
 
   @media ${({ theme }) => theme.media.desktop} {
+    max-width: ${({ theme }) => theme.breakpoints.maxWidth}px;
+    margin: 0 auto;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
