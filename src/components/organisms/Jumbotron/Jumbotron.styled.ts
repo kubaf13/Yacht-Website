@@ -65,7 +65,7 @@ export const ImageWrapper = styled.div`
 
   @media ${({ theme }) => theme.media.largeDesktop} {
     top: 0;
-    right: -300px;
+    right: -400px;
   }
 
   img {
@@ -79,6 +79,7 @@ export const ImageWrapper = styled.div`
 
     @media ${({ theme }) => theme.media.largeDesktop} {
       height: 600px;
+      object-fit: contain;
     }
   }
 `;

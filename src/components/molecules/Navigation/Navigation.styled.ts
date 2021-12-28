@@ -19,6 +19,7 @@ export const StyledNav = styled.nav<NavigationStyledTypes>`
     transform: none;
     order: 1;
     transition: none;
+    
   }
 
   ${({ isOpened }) =>
@@ -46,6 +47,7 @@ export const NavigationWrapper = styled.ul`
     flex-direction: row;
     justify-content: flex-end;
     margin: 0 auto;
+    max-width: ${({ theme }) => theme.breakpoints.maxWidth}px;
   }
 `;
 
