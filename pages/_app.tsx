@@ -7,14 +7,12 @@ import { Layout } from '@/components/template/Layout/Layout';
 import { GlobalStyle, ThemeProvider } from '@/styles';
 
 const YachtRentingApp = ({ Component, pageProps }: AppProps): ReactElement => (
-  <>
-    <ThemeProvider>
-      <Layout footerProps={footerMocks} navigation={navigationMocks}>
-        <GlobalStyle />
-        <Component {...pageProps} />
-      </Layout>
-    </ThemeProvider>
-  </>
+  <ThemeProvider>
+    <Layout footerProps={footerMocks} navigation={navigationMocks}>
+      <GlobalStyle />
+      <Component {...pageProps} />
+    </Layout>
+  </ThemeProvider>
 );
 
 export default YachtRentingApp;

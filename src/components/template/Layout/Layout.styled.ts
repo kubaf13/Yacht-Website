@@ -7,12 +7,9 @@ export const StyledMainContent = styled.div`
 `;
 
 export const LayoutWrapper = styled.div`
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
   overflow-x: hidden;
-
-  @media ${({ theme }) => theme.media.largeDesktop} {
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr auto;
-    padding-top: unset;
-  }
+  padding-top: unset;
 `;

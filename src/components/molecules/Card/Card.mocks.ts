@@ -4,13 +4,13 @@ import { ImagePosition } from '@molecules/Card/Card.types';
 
 export const annabellaMocks: CardTypes = {
   imageUrl: '/static/images/Yachts/yacht5.jpg',
-  altText: 'Yacht Annabella',
-  yachtName: 'Yacht "Annabella"',
+  altText: 'Yacht Annabelle',
+  yachtName: 'Yacht "Annabelle"',
   subTitle: 'Lorem ipsum dolor',
   description:
     'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aspernatur commodi corporis deserunt dolorem dolorum eos est et fugit, hic ipsum iure laboriosam laborum minus praesentium provident quibusdam quod reiciendis sapiente velit, veniam voluptas?',
   linkButton: {
-    url: '/yacht-annabella',
+    url: '/yachts/yacht-annabelle',
     isAnimated: true,
     openInNewTab: false,
     variant: VARIANTS.SECONDARY,
@@ -28,7 +28,7 @@ export const paradiseMocks: CardTypes = {
   description:
     'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aspernatur commodi corporis deserunt dolorem dolorum eos est et fugit, hic ipsum iure laboriosam laborum minus praesentium provident quibusdam quod reiciendis sapiente velit, veniam voluptas?',
   linkButton: {
-    url: '/yacht-paradise',
+    url: '/yachts/yacht-paradise',
     isAnimated: true,
     openInNewTab: false,
     variant: VARIANTS.SECONDARY,
@@ -46,7 +46,7 @@ export const journeyMocks: CardTypes = {
   description:
     'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aspernatur commodi corporis deserunt dolorem dolorum eos est et fugit, hic ipsum iure laboriosam laborum minus praesentium provident quibusdam quod reiciendis sapiente velit, veniam voluptas?',
   linkButton: {
-    url: '/yacht-journey',
+    url: '/yachts/yacht-journey',
     isAnimated: true,
     openInNewTab: false,
     variant: VARIANTS.SECONDARY,
@@ -64,7 +64,7 @@ export const amandaMocks: CardTypes = {
   description:
     'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aspernatur commodi corporis deserunt dolorem dolorum eos est et fugit, hic ipsum iure laboriosam laborum minus praesentium provident quibusdam quod reiciendis sapiente velit, veniam voluptas?',
   linkButton: {
-    url: '/yacht-amanda',
+    url: '/yachts/yacht-amanda',
     isAnimated: true,
     openInNewTab: false,
     variant: VARIANTS.SECONDARY,
