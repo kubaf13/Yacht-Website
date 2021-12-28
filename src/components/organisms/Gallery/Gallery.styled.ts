@@ -4,7 +4,7 @@ export const GalleryWall = styled.div`
   display: grid;
   grid-gap: 15px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, auto);
+  grid-template-rows: repeat(6, auto);
   margin: 0 auto;
   max-width: ${({ theme }) => theme.breakpoints.maxWidth}px;
   position: relative;
@@ -28,7 +28,13 @@ export const GalleryWall = styled.div`
   .grid-item-4,
   .grid-item-5,
   .grid-item-6,
-  .grid-item-7 {
+  .grid-item-7,
+  .grid-item-8,
+  .grid-item-9,
+  .grid-item-10,
+  .grid-item-11,
+  .grid-item-12,
+  .grid-item-13 {
     overflow: hidden;
   }
 
@@ -96,15 +102,23 @@ export const GalleryWall = styled.div`
       grid-row-start: 2;
     }
 
-    .grid-item-7 {
-      grid-column-end: 4;
+    .grid-item-8 {
+      grid-column-end: 3;
       grid-column-start: 1;
       grid-row-end: 4;
       grid-row-start: 4;
-
-      img {
-        height: 50%;
-      }
+    }
+    .grid-item-11 {
+      grid-column-end: 2;
+      grid-column-start: 2;
+      grid-row-end: 6;
+      grid-row-start: 5;
+    }
+    .grid-item-12 {
+      grid-column-end: 3;
+      grid-column-start: 3;
+      grid-row-end: 6;
+      grid-row-start: 5;
     }
   }
 `;
