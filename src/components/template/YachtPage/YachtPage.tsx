@@ -1,4 +1,5 @@
 import Banner from '@atoms/Banner';
+import CenteringContainer from '@atoms/CenteringContainter';
 import type { ReactElement } from 'react';
 import React from 'react';
 
@@ -24,27 +25,29 @@ export const YachtPage = ({
 }: YachtPageTypes): ReactElement => (
   <div>
     <Banner {...banner} />
-    <Information>
-      <div>
-        <h1>{yachtName}</h1>
-        <Properties>
-          <SingleProperties>
-            <BoatIcon />
-            {whatWater}
-          </SingleProperties>
-          <SingleProperties>
-            <PeopleIcon />
-            {size}
-          </SingleProperties>
-          <SingleProperties>
-            <LifePreserverIcon />
-            {helmsman ? 'helmsman' : 'You need to have a helmsman licence'}
-          </SingleProperties>
-        </Properties>
-      </div>
-      <div>
-        <Description>{description}</Description>
-      </div>
-    </Information>
+    <CenteringContainer>
+      <Information>
+        <div>
+          <h1>{yachtName}</h1>
+          <Properties>
+            <SingleProperties>
+              <BoatIcon />
+              {whatWater}
+            </SingleProperties>
+            <SingleProperties>
+              <PeopleIcon />
+              {size}
+            </SingleProperties>
+            <SingleProperties>
+              <LifePreserverIcon />
+              {helmsman ? 'helmsman' : 'You need to have a helmsman licence'}
+            </SingleProperties>
+          </Properties>
+        </div>
+        <div>
+          <Description>{description}</Description>
+        </div>
+      </Information>
+    </CenteringContainer>
   </div>
 );
