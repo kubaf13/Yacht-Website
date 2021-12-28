@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle<StyleProps>`
   html, body {
     font-size: 10px;
     font-family: 'Montserrat', -apple-system, Roboto, sans-serif, Arial;
+    scroll-behavior: smooth;
   }
   
   p {

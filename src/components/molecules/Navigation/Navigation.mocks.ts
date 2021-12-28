@@ -3,9 +3,9 @@ import type { NavigationTypes } from './Navigation.types';
 export const navigationMocks: NavigationTypes = {
   links: [
     {
-      url: '#our-story',
+      url: '#about-us',
       ariaLabel: 'go to our story section',
-      label: 'our story',
+      label: 'about us',
       isOpenedInNewTab: false,
     },
     {

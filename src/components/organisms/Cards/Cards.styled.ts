@@ -4,5 +4,6 @@ export const CardsSection = styled.section`
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 30px 0;
+  margin: 0 auto;
+  max-width: ${({ theme }) => theme.breakpoints.maxWidth}px;
 `;

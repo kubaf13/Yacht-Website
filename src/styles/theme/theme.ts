@@ -1,7 +1,7 @@
 import { Palette, Theme } from './theme.types';
 
 const breakpoints = {
-  maxWidth: 1182,
+  maxWidth: 1400,
   fhd: 1920,
   largeDesktop: 1140,
   desktop: 992,

@@ -34,8 +34,28 @@ export const galleryMocks: GalleryTypes = {
       altText: 'lorem ipsum',
     },
     {
-      className: 'grid-item-7',
-      imageUrl: '/static/images/Gallery/yacht-gallery7.jpg',
+      className: 'grid-item-8',
+      imageUrl: '/static/images/Gallery/yacht-gallery8.jpeg',
+      altText: 'lorem ipsum',
+    },
+    {
+      className: 'grid-item-9',
+      imageUrl: '/static/images/Gallery/yacht-gallery9.jpeg',
+      altText: 'lorem ipsum',
+    },
+    {
+      className: 'grid-item-10',
+      imageUrl: '/static/images/Gallery/yacht-gallery10.jpeg',
+      altText: 'lorem ipsum',
+    },
+    {
+      className: 'grid-item-11',
+      imageUrl: '/static/images/Gallery/yacht-gallery11.jpeg',
+      altText: 'lorem ipsum',
+    },
+    {
+      className: 'grid-item-12',
+      imageUrl: '/static/images/Gallery/yacht-gallery12.jpeg',
       altText: 'lorem ipsum',
     },
   ],
