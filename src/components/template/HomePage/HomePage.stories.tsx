@@ -6,4 +6,4 @@ import { homePageMocks } from './HomePage.mocks';
 
 export const HomePage: FC = () => <HomePageTemplate {...homePageMocks} />;
 
-export default { title: 'Template/Home Page' };
+export default { title: 'Templates/Home Page' };
