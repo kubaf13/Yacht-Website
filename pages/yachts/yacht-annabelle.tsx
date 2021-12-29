@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
 
+import { annabelleMocks } from '@/components/template/YachtPage/AnnabelleMocks';
 import { YachtPage } from '@/components/template/YachtPage/YachtPage';
-import { yachtPageMocks } from '@/components/template/YachtPage/YachtPage.mocks';
 
-const YachtAnnabelle: NextPage = () => <YachtPage {...yachtPageMocks} />;
+const YachtAnnabelle: NextPage = () => <YachtPage {...annabelleMocks} />;
 
 export default YachtAnnabelle;
