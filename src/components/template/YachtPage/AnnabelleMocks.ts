@@ -2,7 +2,7 @@ import { bannerMocks } from '@atoms/Banner/Banner.mocks';
 
 import type { YachtPageTypes } from './YachtPage.types';
 
-export const yachtPageMocks: YachtPageTypes = {
+export const annabelleMocks: YachtPageTypes = {
   banner: bannerMocks,
   yachtName: 'Yacht "Annabelle"',
   description:

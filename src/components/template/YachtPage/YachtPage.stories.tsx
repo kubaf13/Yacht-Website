@@ -1,9 +1,9 @@
 import type { FC } from 'react';
 import React from 'react';
 
+import { annabelleMocks } from './AnnabelleMocks';
 import { YachtPage as YachtPageTemplate } from './YachtPage';
-import { yachtPageMocks } from './YachtPage.mocks';
 
-export const YachtPage: FC = () => <YachtPageTemplate {...yachtPageMocks} />;
+export const YachtPage: FC = () => <YachtPageTemplate {...annabelleMocks} />;
 
 export default { title: 'Templates/Yacht Page' };
