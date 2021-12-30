@@ -3,25 +3,25 @@ import type { NavigationTypes } from './Navigation.types';
 export const navigationMocks: NavigationTypes = {
   links: [
     {
-      url: '#about-us',
+      url: '/#about-us',
       ariaLabel: 'go to our story section',
       label: 'about us',
       isOpenedInNewTab: false,
     },
     {
-      url: '#our-yachts',
+      url: '/#our-yachts',
       ariaLabel: 'go to our yacht section',
       label: 'our yachts',
       isOpenedInNewTab: false,
     },
     {
-      url: '#gallery',
+      url: '/#gallery',
       ariaLabel: 'go to gallery section',
       label: 'gallery',
       isOpenedInNewTab: false,
     },
     {
-      url: '#contact',
+      url: '/#contact',
       ariaLabel: 'go to contact us form',
       label: 'contact',
       isOpenedInNewTab: false,
