@@ -18,7 +18,7 @@ export const FormWrapper = styled.form`
   flex-direction: column;
   justify-content: space-evenly;
   margin: 0 auto;
-  min-height: 60vh;
+  min-height: 30vh;
   width: 80%;
 
   @media ${({ theme }) => theme.media.tablet} {
@@ -59,10 +59,10 @@ export const WhitePaper = styled.div`
   border: 2px solid ${({ theme }) => theme.palette.primaryPalette.blue};
   display: flex;
   flex-direction: column;
-  min-width: 300px;
+  width: 90%;
 
   @media ${({ theme }) => theme.media.tablet} {
-    min-width: 450px;
+    max-width: 550px;
     justify-content: center;
   }
 
@@ -74,9 +74,9 @@ export const WhitePaper = styled.div`
 export const Wrapper = styled.section`
   align-items: center;
   display: flex;
-  height: 100vh;
+  height: fit-content;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 50px auto;
   position: relative;
   width: 100%;
 

@@ -85,20 +85,16 @@ export const ImageWrapper = styled.div`
 `;
 
 export const JumbotronWrapper = styled.section`
-  height: 100vh;
+  height: fit-content;
   position: relative;
   width: 100vw;
-
-  @media ${({ theme }) => theme.media.tablet} {
-    height: 800px;
-  }
 
   @media ${({ theme }) => theme.media.desktop} {
     overflow: hidden;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    max-height: 750px;
+    min-height: 750px;
     max-width: ${({ theme }) => theme.breakpoints.maxWidth}px;
   } ;
 `;
