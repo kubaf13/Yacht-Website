@@ -2,6 +2,7 @@ import type { ReactElement } from 'react';
 import React from 'react';
 
 import {
+  Flag,
   FormField,
   FormWrapper,
   StyledFormButton,
@@ -19,6 +20,7 @@ export const ContactForm = ({
   button,
 }: ContactFormTypes): ReactElement => (
   <Wrapper>
+    <Flag />
     <WhitePaper>
       <h2>{title}</h2>
       <FormWrapper
