@@ -6,12 +6,16 @@ import React from 'react';
 
 import {
   BoatIcon,
+  CalendarIcon,
   Description,
+  DiveIcon,
   Information,
+  LengthIcon,
   LifePreserverIcon,
   PeopleIcon,
   Properties,
   SingleProperties,
+  Speed,
 } from '@/components/template/YachtPage/YachtPage.styled';
 
 import type { YachtPageTypes } from './YachtPage.types';
@@ -49,27 +53,25 @@ export const YachtPage = ({
               {helmsman ? 'helmsman' : 'You need to have a helmsman licence'}
             </SingleProperties>
             <SingleProperties>
-              <PeopleIcon />
+              <LengthIcon />
               {yachtLength} ft
             </SingleProperties>
             <SingleProperties>
-              <PeopleIcon />
+              <DiveIcon />
               {yachtDiveLevel} m
             </SingleProperties>
             <SingleProperties>
-              <PeopleIcon />
+              <CalendarIcon />
               {launchingDate}
             </SingleProperties>
             <SingleProperties>
-              <PeopleIcon />
+              <Speed />
               {speed}
             </SingleProperties>
           </Properties>
         </div>
-        <div>
-          <Description>{description}</Description>
-        </div>
       </Information>
+      <Description>{description}</Description>
       <RentingDates {...bookings} />
     </CenteringContainer>
   </div>

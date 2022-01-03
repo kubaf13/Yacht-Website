@@ -9,8 +9,8 @@ export const RentingDates = ({ bookings }: RentingDatesTypes): ReactElement => (
   <BookingWrapper>
     <h3>You can rent this yacht on: </h3>
     <Columns>
-      <h5>Date</h5>
-      <h5>Price</h5>
+      <h5>date</h5>
+      <h5>price</h5>
     </Columns>
     {bookings.map(rentingDate => (
       <RentingDate key={rentingDate.date} {...rentingDate} />
