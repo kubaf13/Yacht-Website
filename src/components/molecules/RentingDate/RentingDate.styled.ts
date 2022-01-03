@@ -4,6 +4,7 @@ export const DateWrapper = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-evenly;
+  margin: 10px 0;
   max-width: 550px;
 `;
 

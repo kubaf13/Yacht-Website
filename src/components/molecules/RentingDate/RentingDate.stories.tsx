@@ -8,4 +8,4 @@ export const RentingDate: FC = () => (
   <RentingDateComponent {...rentingDateMock} />
 );
 
-export default { title: 'Components/Atoms/Renting Date' };
+export default { title: 'Components/Molecules/Renting Date' };
