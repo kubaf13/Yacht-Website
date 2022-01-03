@@ -1,7 +1,7 @@
 import type { GalleryTypes } from './Gallery.types';
 
 export const galleryMocks: GalleryTypes = {
-  title: 'Our gallery',
+  title: 'Take a look to our gallery',
   images: [
     {
       className: 'grid-item-1',
