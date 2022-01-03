@@ -2,10 +2,11 @@ export interface Palette {
   blue: string;
   lightBlue: string;
   paragraph: string;
-  gray: string;
+  grey: string;
   lightGray: string;
   white: string;
   lightWhite: string;
+  red: string;
 }
 
 export interface Theme {
