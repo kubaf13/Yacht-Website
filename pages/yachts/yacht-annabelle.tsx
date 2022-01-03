@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 
-import { annabelleMocks } from '@/components/template/YachtPage/AnnabelleMocks';
 import { YachtPage } from '@/components/template/YachtPage/YachtPage';
+import { annabelleMocks } from '@/components/template/YachtPage/YachtPage.mocks';
 
 const YachtAnnabelle: NextPage = () => <YachtPage {...annabelleMocks} />;
 

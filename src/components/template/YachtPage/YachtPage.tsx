@@ -1,5 +1,6 @@
 import Banner from '@atoms/Banner';
 import CenteringContainer from '@atoms/CenteringContainter';
+import { RentingDates } from '@organisms/RentingDates/RentingDates';
 import type { ReactElement } from 'react';
 import React from 'react';
 
@@ -22,6 +23,11 @@ export const YachtPage = ({
   banner,
   description,
   whatWater,
+  yachtLength,
+  yachtDiveLevel,
+  speed,
+  launchingDate,
+  bookings,
 }: YachtPageTypes): ReactElement => (
   <div>
     <Banner {...banner} />
@@ -42,12 +48,29 @@ export const YachtPage = ({
               <LifePreserverIcon />
               {helmsman ? 'helmsman' : 'You need to have a helmsman licence'}
             </SingleProperties>
+            <SingleProperties>
+              <PeopleIcon />
+              {yachtLength} ft
+            </SingleProperties>
+            <SingleProperties>
+              <PeopleIcon />
+              {yachtDiveLevel} m
+            </SingleProperties>
+            <SingleProperties>
+              <PeopleIcon />
+              {launchingDate}
+            </SingleProperties>
+            <SingleProperties>
+              <PeopleIcon />
+              {speed}
+            </SingleProperties>
           </Properties>
         </div>
         <div>
           <Description>{description}</Description>
         </div>
       </Information>
+      <RentingDates {...bookings} />
     </CenteringContainer>
   </div>
 );

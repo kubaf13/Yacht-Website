@@ -16,6 +16,7 @@ export const Information = styled.div`
 `;
 
 export const Properties = styled.ul`
+  color: white;
   display: flex;
   list-style-type: none;
   margin: 10px 0;
@@ -23,30 +24,31 @@ export const Properties = styled.ul`
 
 export const SingleProperties = styled.li`
   align-items: center;
-  border: ${({ theme }) => theme.palette.primaryPalette.blue} 1px solid;
+  background: ${({ theme }) => theme.palette.primaryPalette.blue};
   border-radius: 15px;
   display: flex;
   font-weight: 700;
+  font-weight: 300;
   margin-right: 10px;
   padding: 5px 10px;
 `;
 
 export const BoatIcon = styled(Sailboat)`
-  color: ${({ theme }) => theme.palette.primaryPalette.blue};
+  color: ${({ theme }) => theme.palette.primaryPalette.white};
   height: 20px;
   margin-right: 5px;
   width: 20px;
 `;
 
 export const PeopleIcon = styled(PeopleTeam)`
-  color: ${({ theme }) => theme.palette.primaryPalette.blue};
+  color: ${({ theme }) => theme.palette.primaryPalette.white};
   height: 20px;
   margin-right: 5px;
   width: 20px;
 `;
 
 export const LifePreserverIcon = styled(LifePreserver)`
-  color: ${({ theme }) => theme.palette.primaryPalette.blue};
+  color: ${({ theme }) => theme.palette.primaryPalette.white};
   height: 20px;
   margin-right: 5px;
   width: 20px;
