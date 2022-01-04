@@ -14,7 +14,7 @@ const primaryPalette: Palette = {
   lightBlue: '#95B5D0',
   paragraph: '#020202',
   grey: '#5C5E60',
-  lightGray: '#5C5E60',
+  lightGrey: '#5C5E60',
   white: '#FFFFFF',
   lightWhite: 'rgba(255,255,255,0.61)',
   red: '#CE1414',

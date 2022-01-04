@@ -2,16 +2,16 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 import { YachtPage } from '@/components/template/YachtPage/YachtPage';
-import { annabelleMocks } from '@/components/template/YachtPage/YachtPage.mocks';
+import { journeyMocks } from '@/components/template/YachtPage/YachtPage.mocks';
 
-const YachtAnnabelle: NextPage = () => (
+const YachtJourney: NextPage = () => (
   <>
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>{annabelleMocks.yachtName}</title>
+      <title>{journeyMocks.yachtName}</title>
     </Head>
-    <YachtPage {...annabelleMocks} />
+    <YachtPage {...journeyMocks} />
   </>
 );
 
-export default YachtAnnabelle;
+export default YachtJourney;

@@ -11,6 +11,7 @@ const YachtRentingApp = ({ Component, pageProps }: AppProps): ReactElement => (
   <>
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Rent A Yacht</title>
       <link rel="stylesheet" href="/fonts/fonts.css" />
     </Head>
     <ThemeProvider>

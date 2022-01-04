@@ -56,9 +56,11 @@ export const StyledFormButton = styled.button`
 export const WhitePaper = styled.div`
   align-items: center;
   background: ${({ theme }) => theme.palette.primaryPalette.white};
+  border: 1px solid ${({ theme }) => theme.palette.primaryPalette.blue};
   display: flex;
   flex-direction: column;
   min-width: 300px;
+  z-index: 100;
 
   @media ${({ theme }) => theme.media.tablet} {
     min-width: 450px;
@@ -72,14 +74,24 @@ export const WhitePaper = styled.div`
 
 export const Wrapper = styled.section`
   align-items: center;
-  background-color: ${({ theme }) => theme.palette.primaryPalette.blue};
+  background-color: ${({ theme }) => theme.palette.primaryPalette.white};
   display: flex;
   height: 100vh;
   justify-content: center;
   margin-bottom: 20px;
+  position: relative;
   width: 100%;
 
   @media ${({ theme }) => theme.media.tablet} {
     max-height: 700px;
   }
+`;
+export const BlueBelt = styled.div`
+  background-color: ${({ theme }) => theme.palette.primaryPalette.blue};
+  height: 50px;
+  left: 0;
+  position: absolute;
+  top: 48%;
+  width: 100%;
+  z-index: 0;
 `;

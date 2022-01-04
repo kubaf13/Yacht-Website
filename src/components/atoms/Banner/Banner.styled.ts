@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const BannerWrapper = styled.div`
-  width: 100vw;
+  margin: 0 auto;
 
   img {
     max-height: 450px;

@@ -3,7 +3,7 @@ export interface Palette {
   lightBlue: string;
   paragraph: string;
   grey: string;
-  lightGray: string;
+  lightGrey: string;
   white: string;
   lightWhite: string;
   red: string;
