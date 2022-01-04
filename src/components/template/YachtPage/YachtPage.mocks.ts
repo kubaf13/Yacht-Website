@@ -22,7 +22,7 @@ export const annabelleMocks: YachtPageTypes = {
         price: 1400,
         sale: 1200,
         button: {
-          url: '/submit',
+          url: '/yachts/yacht-annabelle/submit',
           label: 'book',
           ariaLabel: 'Book this date',
           openInNewTab: false,
@@ -35,7 +35,7 @@ export const annabelleMocks: YachtPageTypes = {
         price: 1400,
         sale: 1200,
         button: {
-          url: '/submit',
+          url: '/yachts/yacht-annabelle/submit',
           label: 'book',
           ariaLabel: 'Book this date',
           openInNewTab: false,
@@ -47,7 +47,7 @@ export const annabelleMocks: YachtPageTypes = {
         date: '01.03-14.03',
         price: 1560,
         button: {
-          url: '/submit',
+          url: '/yachts/yacht-annabelle/submit',
           label: 'book',
           ariaLabel: 'Book this date',
           openInNewTab: false,
@@ -59,7 +59,7 @@ export const annabelleMocks: YachtPageTypes = {
         date: '22.03-30.03',
         price: 1600,
         button: {
-          url: '/submit',
+          url: '/yachts/yacht-annabelle/submit',
           label: 'book',
           ariaLabel: 'Book this date',
           openInNewTab: false,
@@ -71,7 +71,7 @@ export const annabelleMocks: YachtPageTypes = {
         date: '01.06-14.06',
         price: 2100,
         button: {
-          url: '/submit',
+          url: '/yachts/yacht-annabelle/submit',
           label: 'book',
           ariaLabel: 'Book this date',
           openInNewTab: false,
@@ -106,7 +106,7 @@ export const paradiseMocks: YachtPageTypes = {
         price: 1400,
         sale: 1200,
         button: {
-          url: '/submit',
+          url: '/yachts/yacht-paradise/submit',
           label: 'book',
           ariaLabel: 'Book this date',
           openInNewTab: false,
@@ -119,7 +119,7 @@ export const paradiseMocks: YachtPageTypes = {
         price: 1500,
         sale: 1400,
         button: {
-          url: '/submit',
+          url: '/yachts/yacht-paradise/submit',
           label: 'book',
           ariaLabel: 'Book this date',
           openInNewTab: false,
@@ -131,7 +131,7 @@ export const paradiseMocks: YachtPageTypes = {
         date: '26.04-05.05',
         price: 1660,
         button: {
-          url: '/submit',
+          url: '/yachts/yacht-paradise/submit',
           label: 'book',
           ariaLabel: 'Book this date',
           openInNewTab: false,
@@ -143,7 +143,7 @@ export const paradiseMocks: YachtPageTypes = {
         date: '22.06-10.07',
         price: 2700,
         button: {
-          url: '/submit',
+          url: '/yachts/yacht-paradise/submit',
           label: 'book',
           ariaLabel: 'Book this date',
           openInNewTab: false,
@@ -155,7 +155,7 @@ export const paradiseMocks: YachtPageTypes = {
         date: '21.08-30.08',
         price: 2100,
         button: {
-          url: '/submit',
+          url: '/yachts/yacht-paradise/submit',
           label: 'book',
           ariaLabel: 'Book this date',
           openInNewTab: false,
@@ -190,7 +190,7 @@ export const journeyMocks: YachtPageTypes = {
         price: 5500,
         sale: 4999,
         button: {
-          url: '/submit',
+          url: '/yachts/yacht-journey/submit',
           label: 'book',
           ariaLabel: 'Book this date',
           openInNewTab: false,
@@ -202,7 +202,7 @@ export const journeyMocks: YachtPageTypes = {
         date: '07.04-14.04',
         price: 4500,
         button: {
-          url: '/submit',
+          url: '/yachts/yacht-journey/submit',
           label: 'book',
           ariaLabel: 'Book this date',
           openInNewTab: false,
@@ -215,7 +215,7 @@ export const journeyMocks: YachtPageTypes = {
         price: 6060,
         sale: 5459,
         button: {
-          url: '/submit',
+          url: '/yachts/yacht-journey/submit',
           label: 'book',
           ariaLabel: 'Book this date',
           openInNewTab: false,
@@ -227,7 +227,7 @@ export const journeyMocks: YachtPageTypes = {
         date: '22.06-10.07',
         price: 7000,
         button: {
-          url: '/submit',
+          url: '/yachts/yacht-journey/submit',
           label: 'book',
           ariaLabel: 'Book this date',
           openInNewTab: false,
@@ -239,7 +239,7 @@ export const journeyMocks: YachtPageTypes = {
         date: '21.08-30.08',
         price: 5900,
         button: {
-          url: '/submit',
+          url: '/yachts/yacht-journey/submit',
           label: 'book',
           ariaLabel: 'Book this date',
           openInNewTab: false,
@@ -274,7 +274,7 @@ export const amandaMocks: YachtPageTypes = {
         price: 1200,
         sale: 999,
         button: {
-          url: '/submit',
+          url: '/yachts/yacht-amanda/submit',
           label: 'book',
           ariaLabel: 'Book this date',
           openInNewTab: false,
@@ -286,7 +286,7 @@ export const amandaMocks: YachtPageTypes = {
         date: '11.03-19.03',
         price: 1900,
         button: {
-          url: '/submit',
+          url: '/yachts/yacht-amanda/submit',
           label: 'book',
           ariaLabel: 'Book this date',
           openInNewTab: false,
@@ -298,7 +298,7 @@ export const amandaMocks: YachtPageTypes = {
         date: '22.04-05.05',
         price: 2300,
         button: {
-          url: '/submit',
+          url: '/yachts/yacht-amanda/submit',
           label: 'book',
           ariaLabel: 'Book this date',
           openInNewTab: false,
@@ -310,7 +310,7 @@ export const amandaMocks: YachtPageTypes = {
         date: '22.06-10.07',
         price: 3900,
         button: {
-          url: '/submit',
+          url: '/yachts/yacht-amanda/submit',
           label: 'book',
           ariaLabel: 'Book this date',
           openInNewTab: false,
@@ -323,7 +323,7 @@ export const amandaMocks: YachtPageTypes = {
         price: 3500,
         sale: 3299,
         button: {
-          url: '/submit',
+          url: '/yachts/yacht-amanda/submit',
           label: 'book',
           ariaLabel: 'Book this date',
           openInNewTab: false,
