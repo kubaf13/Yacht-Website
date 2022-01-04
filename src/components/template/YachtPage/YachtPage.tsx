@@ -34,8 +34,8 @@ export const YachtPage = ({
   bookings,
 }: YachtPageTypes): ReactElement => (
   <div>
-    <Banner {...banner} />
     <CenteringContainer>
+      <Banner {...banner} />
       <Information>
         <div>
           <h1>{yachtName}</h1>

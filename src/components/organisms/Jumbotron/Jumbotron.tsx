@@ -1,4 +1,3 @@
-import { LinkButton } from '@atoms/LinkButton/LinkButton';
 import React, { ReactElement } from 'react';
 
 import {
@@ -15,7 +14,6 @@ export const Jumbotron = ({
   paragraph,
   altText,
   imageUrl,
-  linkButton,
 }: JumbotronTypes): ReactElement => (
   <JumbotronWrapper>
     <ImageWrapper>
@@ -24,7 +22,6 @@ export const Jumbotron = ({
     <TextWrapper>
       <Heading>{title}</Heading>
       <Paragraph>{paragraph}</Paragraph>
-      <LinkButton {...linkButton} />
     </TextWrapper>
   </JumbotronWrapper>
 );
