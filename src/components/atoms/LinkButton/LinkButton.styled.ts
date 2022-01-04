@@ -53,6 +53,25 @@ const getVariant = (variant: VARIANTS, isAnimated: boolean) => {
     `;
   }
 
+  if (variant === VARIANTS.THIRD) {
+    return css`
+      background: ${({ theme }) => theme.palette.primaryPalette.red};
+      border: 1px solid transparent;
+      color: ${({ theme }) => theme.palette.primaryPalette.white};
+
+      &:hover,
+      &:active {
+        background: ${({ theme }) => theme.palette.primaryPalette.white};
+        border: 1px solid ${({ theme }) => theme.palette.primaryPalette.red};
+        color: ${({ theme }) => theme.palette.primaryPalette.red};
+      }
+
+      &::before {
+        background-color: ${({ theme }) => theme.palette.primaryPalette.red};
+      }
+    `;
+  }
+
   return css`
     background: ${({ theme }) => theme.palette.primaryPalette.white};
     border: 2px solid ${({ theme }) => theme.palette.primaryPalette.blue};

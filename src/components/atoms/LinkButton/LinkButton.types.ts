@@ -1,6 +1,7 @@
 export enum VARIANTS {
   PRIMARY = 'primary',
   SECONDARY = 'secondary',
+  THIRD = 'third',
 }
 
 export interface LinkButtonTypes {
